@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <title>Početna</title>
+    <meta charset='utf-8'>
+    <meta name="author" content="Vilim Trakoštanec">
+    <meta name="description" content=" html, head, title">
+    <!--tu se pišu oznake, pitati treba dal se koristi description ili key words  DOBRO JE Description-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/vtrakosta20.css" type="text/css">
+    <link rel="stylesheet" href="css/vtrakosta20_ispis.css" type="text/css">
+    <link rel="stylesheet" href="css/vtrakosta20_responzivni_dizajn.css" >
+    <script src="js/vtrakosta20.js"></script>
+    
+</head>
+
+
+<body>
+   
+    <header>
+        <a id="Zaglavlje"></a>
+
+        <noscript>
+
+            <dialog> open> Vaš preglednik ne podržava javascript</dialog>
+
+        </noscript>
+        <div class="spremiste">
+        <br>
+            <a href="index.html" ><img src="materijali/logo_kopija.png" alt="Logo" class="logoStr" id="logo"></a>
+            <h1 class="naslov" id="naslov">Mačke</h1>
+            <a href="prijava.html" class="odjava" id="odjava">Odjava</a>
+            <a href="prijava.html" class="prijava" id="prijava">Prijava</a>
+            <a href="ostalo/promjeni_dizajn.html" class="dizajn" id ="dizajn" target="_blank">Dizajn</a>
+        </div>
+        <div id="ispis_kor_ime">
+            
+        </div>
+        <div id="ispis_datum">
+            
+        </div>
+
+    </header>
+    
+    <nav class="grid-kontenjer2">
+        <br>
+        <a href="index.html" class="grid-item1 odlazak classtest" id="pocetna">Početna</a>
+        <a href="obrazac.html" class="grid-item2 odlazak classtest" id="obrazac">Obrazac</a>
+        <a href="ostalo/kreativna.html" class="grid-item3 odlazak classtest" id="kreativna">Kreativna</a>
+        <a href="ostalo/multimedija.html" class="grid-item4 odlazak classtest" id="multimedija">Multimedija</a>
+        <a href="ostalo/o_autoru.html" class="grid-item5 odlazak classtest" id="autor">O autoru</a>
+        <a href="podaci/popis.html" class="grid-item6 odlazak classtest" id="popis">Popis</a>
+        
+    </nav>
+    
+    <main id="main">
+        <!--Blok-->
+        
+        <ul>
+            <li>
+                Animacija povećavanja - smanjivanja nalazi se na stranici 
+                <a href="ostalo/multimedija.html#slike" class="odlazak_link">multimedije</a>.
+                Prelaskom miša preko slike skalira se slika i figure caption.
+                Animacija pomoću CSSa je isključena komentirana u datoteci <a href="css/vtrakosta20.css" class="odlazak_link">vtrakosta20</a>
+                na linijama 353 do 356. U JavaScriptu kod za ovo je od 230 do 269.
+            </li>
+            <li>
+                Aniamcija rotacije nalazi se na svakoj stranici. Logo stranice se rotira kad se prođe mišem preko njega u 4 koraka, za 90, 180, 270 i 360 stupnjeva 
+                To je postignuto pomoću varijable brojaća koja se uvećava svaki put kad miš napusti sliku loga. 
+                Pri izračunu za koliko se treba logo treba rotirati koristi se dijeljenje s ostatkom, tj modulo (%).
+                Ova funkcionalnost je implementirana u <a href="js/vtrakosta20.js" class="odlazak_link">JavaScriptu</a> na linijama od 272 do 295.
+            </li>
+            <li>
+                Animacija nestjanja naslova, tj. smanjivanja naslova također se nalazi na svakoj stranici. Jednostavnim klikom na naslov bilo koje osim stranice osim Kreativna.html izvršit će se ova anmiacija.
+                Ova funkcionalnost je implementirana u <a href="js/vtrakosta20.js" class="odlazak_link">JavaScriptu</a> na linijama od 297 do 310.
+            </li>
+
+        </ul>
+
+        
+
+        <!--predložak-->
+        <template id="template">
+            <canvas id="myCanvas" width="200" height="100" >
+               
+            </canvas> 
+            
+
+        </template>
+
+
+    </main>
+
+    <footer id="pod">
+        
+        <a href="https://www.srce.unizg.hr/files/srce/docs/otvoreni-pristup/creative_commons_licence.pdf" 
+        class="cc">
+            <img src="materijali/CC_imovanje.png" alt="CC_imovanje" width="200" 
+            height="75" class="cc" >
+        </a>
+        
+        <p class="sl" >
+            &copy;
+            2022.
+            <a href="https://gmail.com">Vilim Trakoštanec</a>
+        </p>
+
+        <a href="#Zaglavlje" class="strelica"><img src="materijali/strelica.png" 
+            alt="povratakNaVrh" 
+            class="val strelica" >
+        </a>
+
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspider.foi.hr%2FOWT%2F2022%2Fzadaca_03%2Fvtrakosta20%2Findex.html" 
+        class="html_val">
+            <img src="materijali/validator_slika.png"
+                alt="Validator" class="val html_val">
+        </a>
+        
+
+    <div class="grid-kontenjerfooter">
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fspider.foi.hr%2FOWT%2F2022%2Fzadaca_03%2Fvtrakosta20%2Fcss%2Fvtrakosta20.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" class="css_val" >
+            <img src="materijali/CSS3.png" alt="val_index" 
+                class="val css_val">
+        </a>
+        <p class="opis1o">
+            vtrakosta20.css
+        </p>
+
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fspider.foi.hr%2FOWT%2F2022%2Fzadaca_03%2Fvtrakosta20%2Fcss%2Fvtrakosta20_ispis.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" class="css_val2" >
+            <img src="materijali/CSS3.png" alt="val_ispis" 
+                class="val css_val2">
+        </a>
+        <p class="opis2o">
+            vtrakosta20_ispis.css
+        </p>
+
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fspider.foi.hr%2FOWT%2F2022%2Fzadaca_03%2Fvtrakosta20%2Fcss%2Fvtrakosta20_responzivni_dizajn.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" class="css_val3" >
+            <img src="materijali/CSS3.png" alt="val_responz" 
+                class="val css_val3">
+        </a>
+        <p class="opis3o">
+            vtrakosta20_responzivni_dizajn.css
+        </p>
+    </div>
+
+    </footer>
+
+</body>
+
+</html>
